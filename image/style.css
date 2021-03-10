@@ -7,9 +7,8 @@
 }
 
 body {
-    background: #0C0B0B;
+    /* background: #0C0B0B; */
     font-family: 'Rubik', sans-serif;
-    font-size: 12px;
 }
 
 .card {
@@ -21,6 +20,12 @@ body {
     height: 80%;
 }
 
+.datas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -30,42 +35,11 @@ body {
     width: 90%;
 }
 
-.info-user img {
+.info .info-user .img {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
-}
-
-.info-user .info-text h1 {
-    font-size: 2em;
-}
-
-.info-user .info-text p {
-    font-size: 1.5em;
-}
-
-.info-btn {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    margin: 0.7em;
-}
-
-.info-btn button {
-    background: #1B1B1B;
-    border: none;
-    outline: none;
-    color: #B7B7B7;
-    font-size: 1em;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-.datas {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    background: #0C0B0B;
+    height: 5em;
+    width: 5em;
 }
 
 .datas div {
@@ -108,20 +82,11 @@ body {
 @media screen and (min-width:1100px) {
     .card {
         width: 60%;
-        padding: 1em;
     }
-    .info {
+    .profile {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 2em;
-        padding: 2em;
-    }
-    .info .info-user {
-        display: flex;
-        text-align: left;
-    }
-    .info-user img {
-        margin-right: 1em;
     }
     .datas {
         flex-direction: row;
